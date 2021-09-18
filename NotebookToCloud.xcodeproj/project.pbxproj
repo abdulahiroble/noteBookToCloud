@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		0616713626F10BA800B452C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0616713426F10BA800B452C2 /* Main.storyboard */; };
 		0616713826F10BAD00B452C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0616713726F10BAD00B452C2 /* Assets.xcassets */; };
 		0616713B26F10BAD00B452C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0616713926F10BAD00B452C2 /* LaunchScreen.storyboard */; };
+		0616714426F10D6600B452C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0616714326F10D6600B452C2 /* GoogleService-Info.plist */; };
+		067267D926F6377A00DF0695 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067267D826F6377A00DF0695 /* TableViewController.swift */; };
+		06EB76D826F499E8004FF529 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB76D726F499E8004FF529 /* Note.swift */; };
+		305BEC0EEB76D4CF2C6845FB /* Pods_NotebookToCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2BF2AAC02285649550A00 /* Pods_NotebookToCloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		0616713726F10BAD00B452C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0616713A26F10BAD00B452C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0616713C26F10BAD00B452C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0616714326F10D6600B452C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		067267D826F6377A00DF0695 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		06EB76D726F499E8004FF529 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../../../Downloads/Note.swift; sourceTree = "<group>"; };
+		32E2BF2AAC02285649550A00 /* Pods_NotebookToCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotebookToCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B59E7C032FD1B68F3A1F7844 /* Pods-NotebookToCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookToCloud.debug.xcconfig"; path = "Target Support Files/Pods-NotebookToCloud/Pods-NotebookToCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		F6974FF525E5C9C628E05B54 /* Pods-NotebookToCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookToCloud.release.xcconfig"; path = "Target Support Files/Pods-NotebookToCloud/Pods-NotebookToCloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305BEC0EEB76D4CF2C6845FB /* Pods_NotebookToCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				0616712D26F10BA800B452C2 /* NotebookToCloud */,
 				0616712C26F10BA800B452C2 /* Products */,
+				7132F83602C431C0BDE91666 /* Pods */,
+				CA2E2F0145C77E07538ADA62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		0616712D26F10BA800B452C2 /* NotebookToCloud */ = {
 			isa = PBXGroup;
 			children = (
+				06EB76D726F499E8004FF529 /* Note.swift */,
 				0616712E26F10BA800B452C2 /* AppDelegate.swift */,
 				0616713026F10BA800B452C2 /* SceneDelegate.swift */,
 				0616713226F10BA800B452C2 /* ViewController.swift */,
@@ -63,8 +77,27 @@
 				0616713726F10BAD00B452C2 /* Assets.xcassets */,
 				0616713926F10BAD00B452C2 /* LaunchScreen.storyboard */,
 				0616713C26F10BAD00B452C2 /* Info.plist */,
+				0616714326F10D6600B452C2 /* GoogleService-Info.plist */,
+				067267D826F6377A00DF0695 /* TableViewController.swift */,
 			);
 			path = NotebookToCloud;
+			sourceTree = "<group>";
+		};
+		7132F83602C431C0BDE91666 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B59E7C032FD1B68F3A1F7844 /* Pods-NotebookToCloud.debug.xcconfig */,
+				F6974FF525E5C9C628E05B54 /* Pods-NotebookToCloud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA2E2F0145C77E07538ADA62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32E2BF2AAC02285649550A00 /* Pods_NotebookToCloud.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0616713F26F10BAD00B452C2 /* Build configuration list for PBXNativeTarget "NotebookToCloud" */;
 			buildPhases = (
+				561B8D8132D466DF81A1B6B3 /* [CP] Check Pods Manifest.lock */,
 				0616712726F10BA800B452C2 /* Sources */,
 				0616712826F10BA800B452C2 /* Frameworks */,
 				0616712926F10BA800B452C2 /* Resources */,
+				8981536D6724514CF456DE81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,6 +133,7 @@
 				TargetAttributes = {
 					0616712A26F10BA800B452C2 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -125,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0616713B26F10BAD00B452C2 /* LaunchScreen.storyboard in Resources */,
+				0616714426F10D6600B452C2 /* GoogleService-Info.plist in Resources */,
 				0616713826F10BAD00B452C2 /* Assets.xcassets in Resources */,
 				0616713626F10BA800B452C2 /* Main.storyboard in Resources */,
 			);
@@ -132,13 +169,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		561B8D8132D466DF81A1B6B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotebookToCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8981536D6724514CF456DE81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookToCloud/Pods-NotebookToCloud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NotebookToCloud/Pods-NotebookToCloud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NotebookToCloud/Pods-NotebookToCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0616712726F10BA800B452C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06EB76D826F499E8004FF529 /* Note.swift in Sources */,
 				0616713326F10BA800B452C2 /* ViewController.swift in Sources */,
 				0616712F26F10BA800B452C2 /* AppDelegate.swift in Sources */,
+				067267D926F6377A00DF0695 /* TableViewController.swift in Sources */,
 				0616713126F10BA800B452C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,9 +364,11 @@
 		};
 		0616714026F10BAD00B452C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59E7C032FD1B68F3A1F7844 /* Pods-NotebookToCloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotebookToCloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +377,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bussinesscard.NotebookToCloud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,9 +385,11 @@
 		};
 		0616714126F10BAD00B452C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6974FF525E5C9C628E05B54 /* Pods-NotebookToCloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NotebookToCloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
