@@ -9,32 +9,51 @@ import UIKit
 import Firebase
 
 class TableViewController: UITableViewController {
+    
+    let userDefaults = UserDefaults.standard
+    
     var db = Firestore.firestore() // get ref to the database
     var notes:[Note] = []
     var currentNote = -1
+    
+    var note = [String]()
+    let noteKey = "noteKey"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         startListener()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loadFromUserdefaults()
+    }
+    
+    func loadFromUserdefaults() {
+        if let array = userDefaults.object(forKey: noteKey) as? [String]{
+           note = array
+        }else {
+            note = [String]()
+            note.append("Empty note")
+            note.append("Empty note2")
+        }
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return note.count
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+       cell.textLabel?.text = note[indexPath.row]
+
+       return cell
+   }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         currentNote = indexPath.row  // save current note index
@@ -45,6 +64,10 @@ class TableViewController: UITableViewController {
         if let viewController = segue.destination as? ViewController {
             viewController.parentViewCon = self
         }
+    }
+    
+    func getCurrentNote() -> String {
+        return note[currentNote]
     }
     
     func startListener() {
